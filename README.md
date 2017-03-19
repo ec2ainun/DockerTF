@@ -25,10 +25,13 @@ print "Hello World!"
 ```
 mending pake:
 ```python
-x=1
-while x<=10:
-  print "Hello World!"
-  x+1
+
+def hai():
+  x=1
+  while x<=10:
+    print "Hello World!"
+    x=x+1
+hai() # <= ini docker
 ```
 
 Seperti yang dikatakan Solomon Hykes, CTO and founder of Docker
