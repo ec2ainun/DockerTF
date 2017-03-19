@@ -42,5 +42,6 @@ yakk itu Pengenalan dalam Docker, untuk lebih lanjutnya bisa dibaca pada [link i
 
 ### Checklist
 - [x] Introduction
+- [ ] Cara Install docker
 - [ ] Cara Build docker
 - [ ] Command Penting di Docker
