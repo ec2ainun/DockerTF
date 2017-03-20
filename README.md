@@ -1,6 +1,6 @@
 # Docker
 
-<img src="/docker.png" width="300" height="300">
+<img src="https://msopentech.com/wp-content/uploads/dockericon.png">
 
 ## Introduction of Docker
 Docker merupakan software container platform. sehingga memungkinkan developer tidak perlu di buat pusing dalam setting up environment dalam sebuah platform. pernah nggak sih kamu pilih-pilih system operasi kalo mau buat apps? misal, OS "a" ribet buat nginstall python harus pake software/install ini itulah sebelum bisa running syntax:
