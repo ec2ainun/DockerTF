@@ -1,13 +1,13 @@
 # Docker
 
 ## Introduction of Docker
-Docker merupakan software container platform. sehingga memungkinkan developer tidak perlu di buat pusing dalam setting up environment dalam sebuah platform. pernah nggak sih kamu pilih-pilih system operasi kalo mau buat apps? misal, OS "a" ribet buat nginstall python harus pake software/install ini itulah sebelum bisa running syntax ini:
+Docker merupakan software container platform. sehingga memungkinkan developer tidak perlu di buat pusing dalam setting up environment dalam sebuah platform. pernah nggak sih kamu pilih-pilih system operasi kalo mau buat apps? misal, OS "a" ribet buat nginstall python harus pake software/install ini itulah sebelum bisa running syntax:
 
 ```python
 print "Hello World!"
 ```
 
-Masalah lainnya terjadi saat kamu bekerja dengan team, jadi kamu harus njelasin beberapa hal yang harus diinstall sebelum bisa running dengan mulus tanpa merah merah :sob: iya klo satu kali penjelasan, masalah lainnya terjadi saat ada 10 gelombang dalam meng-hire developer, dan kamu harus njelasin sebanyak 10 kali, bukankah seorang developer itu harus efektif dan efisien?
+Masalah lainnya terjadi saat kamu bekerja dengan team, jadi kamu harus njelasin beberapa hal yang harus diinstall sebelum bisa running dengan mulus tanpa error :sob:, masalah muncul kembali saat ada 10 gelombang dalam meng-hire developer pada sebuah startup, dan kamu harus njelasin sebanyak 10 kali dan mengalami banyak kendala dengan berbedanya OS yang mereka pakai, bukankah seorang developer itu harus efektif && efisien?
 
 daripada running:
 
@@ -31,7 +31,7 @@ def hai():
   while x<=10:
     print "Hello World!"
     x=x+1
-hai() # <= ini docker
+hai() # <= konsep docker container
 ```
 
 Seperti yang dikatakan Solomon Hykes, CTO and founder of Docker
@@ -41,7 +41,7 @@ Kata Hykes, Developer mendapat masalah ketika code yang telah dibuat di komputer
 
 > Now your app is supposed to span any number of machines, it’s supposed to continue running even if you swap out machines, as you go from your own servers to Amazon or Google Compute Engine. The biggest problem is how do I package my app so that it can be moved around from machine to machine?
 
-yakk itu Pengenalan dalam Docker, untuk lebih lanjutnya bisa dibaca pada [link ini](https://www.docker.com/what-docker)
+Ini Pengenalan simple untuk Docker, untuk lebih lanjutnya bisa dibaca pada [link ini](https://www.docker.com/what-docker)
 
 ### Checklist
 - [x] Introduction
