@@ -1,8 +1,8 @@
-# Docker
+# Docker Simplified
 
 <img src="https://msopentech.com/wp-content/uploads/dockericon.png">
 
-## Introduction of Docker
+## Pengantar Docker
 Docker merupakan software container platform. sehingga memungkinkan developer tidak perlu di buat pusing dalam setting up environment dalam sebuah platform. pernah nggak sih kamu pilih-pilih system operasi kalo mau buat apps? misal, OS "a" ribet buat nginstall python harus pake software/install ini itulah sebelum bisa running syntax:
 
 ```python
@@ -137,9 +137,68 @@ sudo apt-get install docker-ce=<VERSION>
 
 untuk informasi dalam instalasi Docker dengan versi Edge ataupun versi Docker EE dapat mengunjungi [Link berikut](https://docs.docker.com/engine/installation/linux/ubuntu/)
 
+## Cara Build docker
+
+### Membuat Dockerfile
+Dockerfile, bisa dikatakan "resep", file-file apa saja yang perlu ada, setting-an environment, dan kumpulan perintah-perintah untuk membuat suatu "image". jika kamu pernah menginstall OS pada laptop ataupun komputer, anda perlu sebuah image OS dimana akan menyimpan file OS dan data-data apapun yang terkait dengan program. dengan Dockerfile, anda hanya perlu menuliskan file-file apa saja yang dibutuhkan dan selebihnya akan diatur oleh Docker.
+
+Terdapat 3 Command penting dalam membuat image
+- FROM
+- RUN
+- CMD
+
+Command FROM berguna untuk menentukan Image apa yang nantinya akan sebagai dasar OS/environment, terdapat banyak pilihan dalam menetukan aplikasi kita jalan di OS/environment yang mana, untuk selengkapnya dapat mengunjungi [Docker Hub](https://hub.docker.com/explore/)
+
+Command RUN berguna untuk menjalankan perintah-perintah saat membuat image, seperti:
+```sh
+RUN sudo apt-get update
+```
+atau perintah-perintah lain untuk menginstall missing depedencies yang diperlukan untuk Workspace anda nantinya
+
+Command CMD berguna untuk menjalankan perintah saat Image yang telah dibangun, pertamakali di running. hal ini bisa dianalogikan saat kita menghidupkan laptop ataupun komputer, perintah-perintah apa saja yang berlu berjalan dan atau apps-apps mana yang autostart sesaat komputer/laptop hidup
+
+### Membangun Image
+Setelah membuat Dockerfile, saatnya membangun Image dari Dockerfile, Dengan cara:
+```sh
+docker build -t namaImage .
+#namaImage bisa anda ganti sesuai interest anda
+```
+Setelah itu Docker akan mengatur semua yang perlu ada dalam membangun Image,
+setelah proses membangun image, kita perlu merunning Image yang ada yang nantinya akan di taruh pada Container, konsep container ibarat seperti kita menginstall Image yang kita buat ke Laptop/Komputer yang mana.
+```sh
+docker run -p 8880:8880 -p 6006:6006 --name namaContainer -it namaImage
+#namaImage, dan namaContainer bisa anda ganti sesuai interest anda
+# -p digunakan untuk mengekspose port yang mana yang dibuka dan diberi akses dari luar 
+```
+
+## Command Penting di Docker
+```sh
+docker ps -a
+#digunakan untuk melihat semua container yang sedang berjalan ataupun tidak
+```
+
+```sh
+docker images -a
+#digunakan untuk melihat semua Image yang tersedia
+```
+
+```sh
+docker exec -it containerID
+#digunakan untuk masuk ke dalam sistem Container
+```
+
+```sh
+docker rmi imageID
+#digunakan untuk menghapus Image Tertentu
+```
+
+```sh
+docker rm containerID
+#digunakan untuk menghapus container Tertentu
+```
 ### Checklist
 - [x] Introduction
 - [x] Variant Docker
 - [x] Cara Install Docker CE versi Stable (Ubuntu 16.04)
-- [ ] Cara Build docker
-- [ ] Command Penting di Docker
+- [x] Cara Build docker
+- [x] Command Penting di Docker
