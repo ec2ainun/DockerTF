@@ -171,6 +171,12 @@ setelah proses membangun image, kita perlu me-running Image yang ada yang nantin
   # -p digunakan untuk mengekspose port yang mana yang dibuka dan diberi akses dari luar 
 ```
 
+jika telah shutdown/stop container berjalan, kita dapat kembali dengan cara
+```sh
+docker start -ai namaContainer
+```
+
+
 ## Command Penting Docker
 ```sh
   > docker ps -a
