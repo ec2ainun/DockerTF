@@ -35,7 +35,7 @@ def hai():
 hai() # <= konsep docker container
 ```
 
-ilustrasi tersebut hanya sebagai perumpamaan, untuk lebih memahami perbedaan Container dan Virtual machine dapat mengunjungi [link ini](https://blog.andi.dirgantara.co/teknologi-kontainer-pengantar-pengenalan-docker-706eafe03269) 
+ilustrasi tersebut hanya sebagai perumpamaan bagi NOOB, untuk lebih memahami perbedaan Container dan Virtual machine dapat mengunjungi [link ini](https://blog.andi.dirgantara.co/teknologi-kontainer-pengantar-pengenalan-docker-706eafe03269) 
 
 Seperti yang dikatakan Solomon Hykes, CTO and founder of Docker
 >Everyone is looking for a platform to build new apps, and the biggest problem they have is that these apps don’t run on a single computer from beginning to end. - Hykes
