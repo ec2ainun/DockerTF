@@ -35,6 +35,8 @@ def hai():
 hai() # <= konsep docker container
 ```
 
+ilustrasi tersebut hanya sebagai perumpamaan, untuk lebih memahami perbedaan Container dan Virtual machine dapat mengunjungi [link ini](https://blog.andi.dirgantara.co/teknologi-kontainer-pengantar-pengenalan-docker-706eafe03269) 
+
 Seperti yang dikatakan Solomon Hykes, CTO and founder of Docker
 >Everyone is looking for a platform to build new apps, and the biggest problem they have is that these apps don’t run on a single computer from beginning to end. - Hykes
 
@@ -44,36 +46,9 @@ Kata Hykes, Developer mendapat masalah ketika code yang telah dibuat di komputer
 
 Ini Pengenalan sederhana untuk Docker, untuk lebih lanjutnya bisa dibaca pada [link ini](https://www.docker.com/what-docker)
 
-## Variant Docker
-Docker mempunyai 2 variant yaitu Docker Enterprise Edition dan Docker Community Edition
-
-### Docker Enterprise Edition
-Dibuat untuk keperluan development sekelas Enterprise dan untuk sebuah team yang memiliki keperluan untuk build, ship, dan run dalam skala production. Docker EE telah Terintergrasi, Tersertifikat, dan di support untuk melayani Perusahan-Perusahan yang memiliki kebutuhan dengan tingkat keamanan tinggi dalam platform containernya di dalam industri bisnis. untuk informasi lebih lanjut dapat mengunjungi [Docker Enterprise Edition](https://www.docker.com/enterprise-edition/)
-
-### Docker Community Edition
-Diperuntukan untuk developer dan orang-orang yang ingin belajar dan bereksperimen dengan continer-base apps. Docker CE memberikan 2 pilihan yaitu versi stable dan edge
- - Stable release per 3 bulan sekali
- - Edge relese per bulan sekali
-
 ### Platform support 
 Docker CE dan Docker EE dapat berjalan di Linux, Cloud, Windows, dan macOS platform. 
-
-| Platform | Docker CE | Docker EE |
-| --- | :---: | :---: |
-| [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/) | o | o |
-| [Debian](https://docs.docker.com/engine/installation/linux/debian/) | | o |
-| [Red Hat Enterprise Linux](https://docs.docker.com/engine/installation/linux/rhel/) | o |  |
-| [CentOS](https://docs.docker.com/engine/installation/linux/centos/) | o | o |
-| [Fedora](https://docs.docker.com/engine/installation/linux/fedora/) |  | o |
-| [Oracle Linux](https://docs.docker.com/engine/installation/linux/oracle/) | o |  |
-| [SUSE Linux Enterprise Server](https://docs.docker.com/engine/installation/linux/suse/) | o |  |		 
-| [Microsoft Windows Server 2016](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-server) | o |  |
-| [Microsoft Windows 10](https://docs.docker.com/docker-for-windows/) |  | o |
-| [macOS](https://docs.docker.com/docker-for-mac/) |  | o |
-| [Microsoft Azure](https://docs.docker.com/docker-for-azure/) | o | o |	
-| [Amazon Web Services](https://docs.docker.com/docker-for-aws/) | o | o |
-
-untuk penjelasan setup Docker di Cloud seperti: Digital Ocean, Packet, atau SoftLink dapat dilihat [disini](https://docs.docker.com/engine/installation/#on-docker-cloud)
+untuk penjelasan platform support dapat dilihat [disini](https://docs.docker.com/engine/installation/#supported-platforms)
 
 ## Cara Install Docker CE versi Stable (Ubuntu 16.04)
 Disini saya hanya akan menjelaskan tata cara menginstall Docker di Linux Ubuntu, untuk OS lainnya dapat [dilihat di sini](https://docs.docker.com/engine/getstarted/step_one/)
